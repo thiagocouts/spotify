@@ -1,0 +1,146 @@
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	background: url('imagens/capa.png'), 
+				url('imagens/ruido.png'),
+				linear-gradient(40deg, #FF4169, #7C26F8);
+	background-attachment: fixed; /* imagem do background fica parado*/
+	font-family: Helvetica, Arial, sans-serif;
+	/*overflow-y: hidden; remove a barra de rolagem na vertical*/
+	overflow-x: hidden; /*na horizontal*/  
+}
+
+/*-- Barra de navegação --*/
+
+.img-logo {
+	width: 132px;
+	height: 40px;
+	display: block; /*padrão do span é inline*/
+	background: url('imagens/spotify.svg') no-repeat; /*svg-> formato de imagens que gera imagens escalaveis
+	que se adequam aos diversos dispositivos*/
+	background-size: contain;/*contain deixa a imagem do tamanho definido no width e height*/
+	color: transparent; /*escondendo o texto*/
+}
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+.navbar-brand {
+	padding: 5px 15px;
+}
+.divisor {
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a, #rodape .nav a {
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover {
+	color: #9BF0E1;
+	background: none;
+}
+
+/*--Imagem da capa--*/
+.capa {
+	display: table;
+	width: 100%;
+}
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*--Botões--*/
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0 15px;
+	transition: background 0.4s, color 0.4s;
+}
+.btn-roxo {
+	background: #7C25F8;
+}
+.btn-roxo:hover {
+	background-color: #6207E3;
+	color: white;  
+}
+.btn-branco {
+	border: 2px solid white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+/*--Seção serviços--*/
+#servicos {
+	background: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.albuns {
+	padding: 10px 0px 10px 0px;
+}
+
+/*--Seção recursos--*/
+#recursos {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
+}
+.rotacionar {
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/*--Rodapé--*/
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+.item-redesocial {
+	float: right;
+}
+
+/*-- Tipografia (formatação de textos) --*/
+h1 {
+	font-size: 100px;
+	font-weight: 700;
+	letter-spacing: -4px;
+	margin-bottom: 50px;
+}
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+h3 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+#servicos h2, #servicos h3 {
+	color: #7C25F8;
+}
+#recursos h3 {
+	color: #9BF0E1;
+}
+#rodape h4 {
+	text-transform: uppercase;
+	color: #919496;
+	font-size: 12px;
+}
